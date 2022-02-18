@@ -8,6 +8,7 @@
  * @output: XBCxPH6C+cg=
  *************************/
 
+```
 private static String encryptPassword(String msgId, String password) throws Exception {
 
     MessageDigest mDigest = MessageDigest.getInstance(“SHA - 512”);
@@ -22,3 +23,4 @@ private static String encryptPassword(String msgId, String password) throws Exce
     return finalValue;
 
 }
+```
