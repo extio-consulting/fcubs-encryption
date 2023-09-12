@@ -1,5 +1,22 @@
-# fcubs-encryption
-Sample code(s) for FCUBS credentials Encryption
+### Authentication
+
+      **Bearer Auth**:            # arbitrary name for the security scheme
+        type: http
+        scheme: bearer
+        bearerFormat: JWT    # optional, arbitrary value for documentation purposes
+
+      **ApiKeyAuth**:        # arbitrary name for the security scheme
+        type: apiKey
+        in: header       # can be "header", "query" or "cookie"
+        name: X-API-KEY  # name of the header, query parameter or cookie        
+
+      **SOAPActionAuth**:        # arbitrary name for the security scheme
+        type: string
+        in: header       # should be "header" with key "SOAPAction" and value for it as shared with the Endpoint for each SOAP Operation
+        name: SOAPAction  # name of the header, query parameter or cookie    
+
+# Password Encryptiuon [fcubs-encryption]
+Sample code(s) for FCUBS Password Encryption
 
 
 For Password encryption below logic should be used as per FCUBS:
