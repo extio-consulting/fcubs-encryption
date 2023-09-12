@@ -6,17 +6,17 @@
    type: http  
    scheme: bearer  
    bearerFormat: JWT          # optional, arbitrary value for documentation purposes  
-   name: Authorization  
+   **name**: Authorization  
     
  **Api Key Auth**:              # arbitrary name for the security scheme  
    type: apiKey  
-   in: header                 # can be "header", "query" or "cookie"  
-   name: X-API-Key            # name of the header  
+   in: header                 # should be "header"
+   **name**: X-API-Key            # name of the header  
   
  **SOAP Action Auth**:          # arbitrary name for the security scheme  
    type: string  
    in: header                 # should be "header" with key "SOAPAction" and value for it as shared with the Endpoint for each SOAP Operation  
-   name: SOAPAction           # name of the header, query parameter or cookie    
+   **name**: SOAPAction           # name of the header, query parameter or cookie    
        
 
    
