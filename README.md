@@ -2,20 +2,21 @@
 
 ### HTTP Headers
 
-      **Bearer Auth**:            # arbitrary name for the security scheme
+      **Bearer Auth**:             # arbitrary name for the security scheme
         type: http
         scheme: bearer
-        bearerFormat: JWT    # optional, arbitrary value for documentation purposes
+        bearerFormat: JWT          # optional, arbitrary value for documentation purposes
+        name: Authorization
 
-      **ApiKeyAuth**:        # arbitrary name for the security scheme
+      **ApiKeyAuth**:              # arbitrary name for the security scheme
         type: apiKey
-        in: header       # can be "header", "query" or "cookie"
-        name: X-API-KEY  # name of the header, query parameter or cookie        
+        in: header                 # can be "header", "query" or "cookie"
+        name: X-API-Key            # name of the header
 
-      **SOAPActionAuth**:        # arbitrary name for the security scheme
+      **SOAPActionAuth**:          # arbitrary name for the security scheme
         type: string
-        in: header       # should be "header" with key "SOAPAction" and value for it as shared with the Endpoint for each SOAP Operation
-        name: SOAPAction  # name of the header, query parameter or cookie    
+        in: header                 # should be "header" with key "SOAPAction" and value for it as shared with the Endpoint for each SOAP Operation
+        name: SOAPAction           # name of the header, query parameter or cookie    
 
 # Authorization
 
