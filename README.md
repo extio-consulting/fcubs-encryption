@@ -1,30 +1,30 @@
 # Authentication
 
-### HTTP Headers
+### HTTP Headers - All three HTTP Headers are mandatory for SOAP Services
 
- **Bearer Auth**:             # arbitrary name for the security scheme  
+ **Bearer Auth**:             
    type: http  
    scheme: bearer  
-   bearerFormat: JWT          # optional, arbitrary value for documentation purposes  
-   **name**: Authorization  
+   bearerFormat: JWT          
+   **name**: Authorization        
     
- **Api Key Auth**:              # arbitrary name for the security scheme  
+ **Api Key Auth**:              
    type: apiKey  
-   in: header                 # should be "header"
-   **name**: X-API-Key            # name of the header  
+   in: header                 
+   **name**: X-API-Key           
   
- **SOAP Action Auth**:          # arbitrary name for the security scheme  
+ **SOAP Action Auth**:         
    type: string  
-   in: header                 # should be "header" with key "SOAPAction" and value for it as shared with the Endpoint for each SOAP Operation  
-   **name**: SOAPAction           # name of the header, query parameter or cookie    
+   in: header                
+   **name**: SOAPAction      
        
 
    
 
 # Authorization
 
-### Password Encryptiuon [fcubs-encryption]
-Sample code(s) for FCUBS Password Encryption
+### Password Encryption [fcubs-encryption] - Data Element PASSWORD to be sent under FCUBS_HEADER element
+Below is the process for FCUBS Password Encryption (sample code attached)
 
 
 For Password encryption below logic should be used as per FCUBS:
